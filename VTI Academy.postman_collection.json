@@ -1,0 +1,503 @@
+{
+	"info": {
+		"_postman_id": "0846dc98-b449-4965-a2fc-d35bc6aa10af",
+		"name": "VTI Academy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21659565"
+	},
+	"item": [
+		{
+			"name": "Railway47",
+			"item": [
+				{
+					"name": "FinalExam",
+					"item": [
+						{
+							"name": "Get all departments",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "dangblack",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "123456",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/departments",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"departments"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "2",
+											"disabled": true
+										},
+										{
+											"key": "size",
+											"value": "2",
+											"disabled": true
+										},
+										{
+											"key": "sort",
+											"value": "id,desc",
+											"disabled": true
+										},
+										{
+											"key": "sort",
+											"value": "name,asc",
+											"disabled": true
+										},
+										{
+											"key": "createdDate",
+											"value": "14-09-2022",
+											"disabled": true
+										},
+										{
+											"key": "minCreatedDate",
+											"value": "2021-09-30",
+											"disabled": true
+										},
+										{
+											"key": "type",
+											"value": "PROJECT_MANAGER",
+											"disabled": true
+										},
+										{
+											"key": "maxCreatedDate",
+											"value": "2022-09-20",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create department",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "dangblack",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "123456",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"test\",\r\n    \"type\": \"TESTER\"\r\n   \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/departments",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"departments"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete department",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/departments/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"departments",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update department",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "123456",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "dangblack",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"id\": 10,\r\n    \"name\": \"test1\",\r\n    \"type\": \"DEVELOPER \"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/departments/10",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"departments",
+										"10"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get department by id",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "huanhoahong",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "123456",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/departments/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"departments",
+										"4"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get all Accounts",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "29196",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "ngocdolphin",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/v1/accounts",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"accounts"
+									],
+									"query": [
+										{
+											"key": "search",
+											"value": "Bảo vệ",
+											"disabled": true
+										},
+										{
+											"key": "departmentId",
+											"value": "1",
+											"disabled": true
+										},
+										{
+											"key": "maxId",
+											"value": "7",
+											"disabled": true
+										},
+										{
+											"key": "minId",
+											"value": "7",
+											"disabled": true
+										},
+										{
+											"key": "role",
+											"value": "EMPLOYEE",
+											"disabled": true
+										},
+										{
+											"key": "maxCreatedDate",
+											"value": "2022-09-30",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Account",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "dangblack",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "123456",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\": \"tung\",\r\n    \"password\": \"123456\",\r\n    \"firstName\": \"Nguyễn \",\r\n    \"lastName\": \"Tùng\",\r\n    \"role\": \"ADMIN\",\r\n    \"departmentId\": 3\r\n    \r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/accounts",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"accounts"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update account",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "nam",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "123456",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 11,\r\n    \"username\": \"tung\",\r\n    \"firstName\": \"Nguyễn Văn\",\r\n    \"lastName\": \"Tùng\",\r\n    \"role\": \"EMPLOYEE\",\r\n    \"departmentId\": 4\r\n    \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/accounts/11",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"accounts",
+										"11"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete account",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "dangblack",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "123456",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/accounts/9",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"accounts",
+										"9"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get account by id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/v1/accounts/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"accounts",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
